@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
+
 # Set proxy function
 function set_proxy() {
-    export http_proxy="http://your.proxy.server:port"
-    export https_proxy="http://your.proxy.server:port"
+    export http_proxy="http://localhost:7890"
+    export https_proxy="http://localhost:7890"
     echo "Proxy set to $http_proxy"
 }
 

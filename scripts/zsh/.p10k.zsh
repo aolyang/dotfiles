@@ -88,14 +88,14 @@
     toolbox                 # toolbox name (https://github.com/containers/toolbox)
     context                 # user@hostname
     nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
-    ranger                  # ranger shell (https://github.com/ranger/ranger)
-    nnn                     # nnn shell (https://github.com/jarun/nnn)
-    lf                      # lf shell (https://github.com/gokcehan/lf)
-    xplr                    # xplr shell (https://github.com/sayanarijit/xplr)
-    vim_shell               # vim shell indicator (:sh)
-    midnight_commander      # midnight commander shell (https://midnight-commander.org/)
-    nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
-    chezmoi_shell           # chezmoi shell (https://www.chezmoi.io/)
+    ranger                  # ranger scripts (https://github.com/ranger/ranger)
+    nnn                     # nnn scripts (https://github.com/jarun/nnn)
+    lf                      # lf scripts (https://github.com/gokcehan/lf)
+    xplr                    # xplr scripts (https://github.com/sayanarijit/xplr)
+    vim_shell               # vim scripts indicator (:sh)
+    midnight_commander      # midnight commander scripts (https://midnight-commander.org/)
+    nix_shell               # nix scripts (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
+    chezmoi_shell           # chezmoi scripts (https://www.chezmoi.io/)
     # vi_mode               # vi mode (you don't need this if you've enabled prompt_char)
     # vpn_ip                # virtual private network indicator
     # load                  # CPU load
@@ -609,11 +609,11 @@
   #
   # Available sources:
   #
-  # - shell   `asdf current` says "set by ASDF_${TOOL}_VERSION environment variable"
+  # - scripts   `asdf current` says "set by ASDF_${TOOL}_VERSION environment variable"
   # - local   `asdf current` says "set by /some/not/home/directory/file"
   # - global  `asdf current` says "set by /home/username/file"
   #
-  # Note: If this parameter is set to (shell local global), it won't hide tools.
+  # Note: If this parameter is set to (scripts local global), it won't hide tools.
   # Tip:  Override this parameter for ${TOOL} with POWERLEVEL9K_ASDF_${TOOL}_SOURCES.
   typeset -g POWERLEVEL9K_ASDF_SOURCES=(shell local global)
 
@@ -749,50 +749,50 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_NORDVPN_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  #################[ ranger: ranger shell (https://github.com/ranger/ranger) ]##################
-  # Ranger shell color.
+  #################[ ranger: ranger scripts (https://github.com/ranger/ranger) ]##################
+  # Ranger scripts color.
   typeset -g POWERLEVEL9K_RANGER_FOREGROUND=3
   typeset -g POWERLEVEL9K_RANGER_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_RANGER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ######################[ nnn: nnn shell (https://github.com/jarun/nnn) ]#######################
-  # Nnn shell color.
+  ######################[ nnn: nnn scripts (https://github.com/jarun/nnn) ]#######################
+  # Nnn scripts color.
   typeset -g POWERLEVEL9K_NNN_FOREGROUND=0
   typeset -g POWERLEVEL9K_NNN_BACKGROUND=6
   # Custom icon.
   # typeset -g POWERLEVEL9K_NNN_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ######################[ lf: lf shell (https://github.com/gokcehan/lf) ]#######################
-  # lf shell color.
+  ######################[ lf: lf scripts (https://github.com/gokcehan/lf) ]#######################
+  # lf scripts color.
   typeset -g POWERLEVEL9K_LF_FOREGROUND=0
   typeset -g POWERLEVEL9K_LF_BACKGROUND=6
   # Custom icon.
   # typeset -g POWERLEVEL9K_LF_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ##################[ xplr: xplr shell (https://github.com/sayanarijit/xplr) ]##################
-  # xplr shell color.
+  ##################[ xplr: xplr scripts (https://github.com/sayanarijit/xplr) ]##################
+  # xplr scripts color.
   typeset -g POWERLEVEL9K_XPLR_FOREGROUND=0
   typeset -g POWERLEVEL9K_XPLR_BACKGROUND=6
   # Custom icon.
   # typeset -g POWERLEVEL9K_XPLR_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ###########################[ vim_shell: vim shell indicator (:sh) ]###########################
-  # Vim shell indicator color.
+  ###########################[ vim_shell: vim scripts indicator (:sh) ]###########################
+  # Vim scripts indicator color.
   typeset -g POWERLEVEL9K_VIM_SHELL_FOREGROUND=0
   typeset -g POWERLEVEL9K_VIM_SHELL_BACKGROUND=2
   # Custom icon.
   # typeset -g POWERLEVEL9K_VIM_SHELL_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ######[ midnight_commander: midnight commander shell (https://midnight-commander.org/) ]######
-  # Midnight Commander shell color.
+  ######[ midnight_commander: midnight commander scripts (https://midnight-commander.org/) ]######
+  # Midnight Commander scripts color.
   typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_FOREGROUND=3
   typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  #[ nix_shell: nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html) ]##
-  # Nix shell color.
+  #[ nix_shell: nix scripts (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html) ]##
+  # Nix scripts color.
   typeset -g POWERLEVEL9K_NIX_SHELL_FOREGROUND=0
   typeset -g POWERLEVEL9K_NIX_SHELL_BACKGROUND=4
 
@@ -805,8 +805,8 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_NIX_SHELL_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  ##################[ chezmoi_shell: chezmoi shell (https://www.chezmoi.io/) ]##################
-  # chezmoi shell color.
+  ##################[ chezmoi_shell: chezmoi scripts (https://www.chezmoi.io/) ]##################
+  # chezmoi scripts color.
   typeset -g POWERLEVEL9K_CHEZMOI_SHELL_FOREGROUND=0
   typeset -g POWERLEVEL9K_CHEZMOI_SHELL_BACKGROUND=4
   # Custom icon.
@@ -1310,7 +1310,7 @@
 
   # Hide haskell version if it doesn't come from one of these sources.
   #
-  #   shell:  version is set by STACK_YAML
+  #   scripts:  version is set by STACK_YAML
   #   local:  version is set by stack.yaml up the directory tree
   #   global: version is set by the implicit global project (~/.stack/global-project/stack.yaml)
   typeset -g POWERLEVEL9K_HASKELL_STACK_SOURCES=(shell local)
