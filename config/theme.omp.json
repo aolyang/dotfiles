@@ -42,8 +42,9 @@
           "foreground": "#003544",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "folder_separator_icon": "/",
-            "style": "full"
+            "folder_icon": "..\ue5fe..",
+            "home_icon": "~",
+            "style": "agnoster_short"
           },
           "style": "powerline",
           "template": " \ue5ff {{ .Path }} ",
